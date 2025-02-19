@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - STEMinist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="nav-container">
+        <!-- STEMinist Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="steminist-logo.png" alt="STEMinist Logo" class="logo">
+        </a>
+
+        <!-- Navbar Links -->
+        <ul class="navbar-nav">
+            <li><a href="#" class="nav-btn">Home</a></li>
+            <li><a href="#opportunities" class="nav-btn">Opportunities</a></li>
+            <li><a href="#resources" class="nav-btn">Resources</a></li>
+            <li><a href="#contact" class="nav-btn">Contact</a></li>
+        </ul>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+</nav>
+
+<!-- About Us Section -->
+<section id="about">
+    <div class="content-wrapper">
+        <div class="left">
+            <h1>About us</h1>
+            <p>Throughout history, women in STEM have defied expectations, shattered barriers, and transformed the world—often without the recognition they deserved. Ada Lovelace, Hedy Lamarr, and Rosalind Franklin are not just names in history books; they are proof that innovation knows no gender.</p>
+            <p>Our mission is to bridge the gender gap in science, technology, engineering, and mathematics by providing access to internships, scholarships, and industry connections.</p>
+            <p>Join us in shaping a future where women thrive in STEM!</p>
+        </div>
+        <div class="right">
+            <div class="slideshow-container">
+                <div class="slideshow">
+                    <div class="slide active">
+                        <img src="ada-lovelace.jpg" alt="Ada Lovelace">
+                        <div class="slide-info">
+                            <h2>Ada Lovelace</h2>
+                            <p>The world's first computer programmer, envisioned machines beyond mere calculations—laying the foundation for modern computing long before the first computer existed.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="rosalind-franklin.jpg" alt="Rosalind Franklin">
+                        <div class="slide-info">
+                            <h2>Rosalind Franklin</h2>
+                            <p>A brilliant chemist, used X-ray crystallography to uncover the double-helix structure of DNA, revolutionizing genetics and medicine.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="hedy-lamarr.jpg" alt="Hedy Lamarr">
+                        <div class="slide-info">
+                            <h2>Hedy Lamarr</h2>
+                            <p>A self-taught inventor and Hollywood actress, co-developed a frequency-hopping system during World War II—a technology that later became the backbone of Wi-Fi, GPS, and Bluetooth.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Arrows -->
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Inspiration Section -->
+<section id="inspiration">
+    <div class="inspiration-content">
+        <h2>How They Inspire STEMinist’s Mission</h2>
+        <p>At STEMinist, we believe every girl should have the freedom to explore, create, and lead in science, technology, engineering, and mathematics.</p>
+        <ul>
+            <li>We provide opportunities, mentorship, and support for young women who dare to dream.</li>
+            <li>We foster a community where curiosity thrives, barriers break, and brilliance shines.</li>
+            <li>We continue the legacy of Lovelace, Lamarr, and Franklin—because the future of STEM should be shaped by all minds, not just a few.</li>
+        </ul>
+        <p>STEMinist is more than a platform; it’s a movement. A movement where young women don’t just find their place in STEM—they redefine it.</p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
